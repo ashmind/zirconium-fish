@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{5AE3C894-5442-43DB-99DF-FF71FD5B723A}"
+	ProjectSection(SolutionItems) = preProject
+		..\app\js\jasmine-html.js = ..\app\js\jasmine-html.js
+		..\app\js\jasmine.js = ..\app\js\jasmine.js
+		..\app\js\jquery-2.0.3.js = ..\app\js\jquery-2.0.3.js
+		..\app\js\jquery.autoGrowInput.js = ..\app\js\jquery.autoGrowInput.js
+		..\app\js\stratified.js = ..\app\js\stratified.js
+		..\app\js\zirconium.chrome.sjs = ..\app\js\zirconium.chrome.sjs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content-scripts", "content-scripts", "{E8E86F3F-DA9A-48B5-9998-F4A192AF0EEE}"
+	ProjectSection(SolutionItems) = preProject
+		..\app\js\content-scripts\zirconium.chrome.content.js = ..\app\js\content-scripts\zirconium.chrome.content.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{87A31C3E-81CC-4CF9-9281-90066BCE2CBF}"
+	ProjectSection(SolutionItems) = preProject
+		..\app\css\jasmine.css = ..\app\css\jasmine.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{DFB53DCE-F69D-426E-AE83-1FFCB3DA3C8E}"
+	ProjectSection(SolutionItems) = preProject
+		..\app\img\icon.png = ..\app\img\icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{5418406F-581A-4783-AD9A-E4E6E18D0E9C}"
+	ProjectSection(SolutionItems) = preProject
+		..\app\manifest.json = ..\app\manifest.json
+		..\app\popup.html = ..\app\popup.html
+		..\app\popup.js = ..\app\popup.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5AE3C894-5442-43DB-99DF-FF71FD5B723A} = {5418406F-581A-4783-AD9A-E4E6E18D0E9C}
+		{87A31C3E-81CC-4CF9-9281-90066BCE2CBF} = {5418406F-581A-4783-AD9A-E4E6E18D0E9C}
+		{DFB53DCE-F69D-426E-AE83-1FFCB3DA3C8E} = {5418406F-581A-4783-AD9A-E4E6E18D0E9C}
+		{E8E86F3F-DA9A-48B5-9998-F4A192AF0EEE} = {5AE3C894-5442-43DB-99DF-FF71FD5B723A}
+	EndGlobalSection
+EndGlobal
