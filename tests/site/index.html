@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Links:</h2>
+        <ul>
+          <li><a id="simple-link" href="success.html">Simple Link</a></li>
+          <li id="js-added-link-parent">JavaScript: 5</li>          
+        </ul>
+        
+        <h2>Form:</h2>
+        <form method="get" action="success.html">
+          <input name="name" type="text" placeholder="Name" required />
+          <input name="code" type="text" placeholder="Code" required />
+          <button type="submit">Submit</button>
+        </form>
+        
+        <h2>Flash:</h2>
+        <div><div id="flash-button-placeholder">Flash not loaded :(</div></div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+      // js link
+      $(function() {
+        var countdown = 4;
+        var $jsLinkParent = $('#js-added-link-parent');
+        var interval = window.setInterval(function() {
+          if (countdown === 0) {
+            window.clearInterval(interval);
+            $jsLinkParent.html('<a id="js-added-link" href="success.html">Link added by JavaScript</a>');
+            return;
+          }
+
+          $jsLinkParent.text('JavaScript: ' + countdown);
+          countdown -= 1;
+        }, 1000);
+      });
+    </script>
+    
+    <script src="flash/swfobject.js"></script>
+    <script>
+      swfobject.embedSWF(
+        "flash/button.swf", 
+        "flash-button-placeholder", "150px", "50px", "10.0.0", 
+        "flash/expressInstall.swf", 
+        { targetURL: 'http://localhost/nt/success.html', text: 'Flash Button ' },
+        { menu: "false", scale: "noScale", allowScriptAccess: "always", bgcolor: "", wmode: "direct" },
+        { id: 'flash-button' });
+    </script>
+  </body>
+</html>
